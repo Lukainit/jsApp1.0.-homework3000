@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>bullshit3000</title>
+</head>
+<body>
+
+    <div class="header">
+
+        <nav>
+            <div class="logo">
+                <h1>fsociaty.dat</h1>
+                <span>read.me</span>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>The <br> Future </h1>
+            <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                 Ipsa, voluptatibus sequi maiores natus itaque sapiente? 
+                 Eligendi velit blanditiis adipisci tempora quod optio! 
+                 Obcaecati?
+            </p>
+
+            <div class="links">
+                <a href="#">Learn More</a>
+                <a href="#">Contacts</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- на днях будет версия 2.0 . пока что- каша. теперь я понял, что, надо очень много практиковаться... кстати, считай что головы писал:) понимаю что здесь bullshit полный-->
+
+    <script>
+
+    const signIn = +prompt('how old r u?', '');
+
+    if (signIn < 18) {
+        console.log("very young person!!!")
+    } else if (signIn > 18) {
+        console.log('all right')
+    } else {
+    console.log('Error404')
+    }; 
+
+
+    let helloFriend;
+
+    function start(){
+        
+        helloFriend = +prompt('Hello friend. u really wont visit this site? "yes or not"', ''); 
+
+        while (helloFriend == '' || helloFriend == null ) { 
+
+            helloFriend = +prompt('Hello friend. u really wont visit this site? "yes or not"', ''); 
+
+        };
+
+    };
+
+
+start();
+
+
+    const mrRobotDB = {
+        count: helloFriend, 
+        mrObject: {}, 
+    }; 
+
+
+
+function rememberQuestions(){
+
+       for(let i = 0; i < 2; i++){
+    
+           const a = prompt('u really wathched mr robot>', ''); 
+          
+           if (a == '' && a != typeof(Number)){
+               console.log('this is person not watched mr robot')
+           } else {
+               console.log('all right')
+           };
+          
+          let b = prompt('how many episodes have you watched?', '');
+          
+           if (b < 50 && b == ''){
+               console.log('hmm')
+           } else {
+               console.log('maybe all right')
+           }; 
+             
+          mrRobotDB.mrObject[a] = b; 
+          
+       }; 
+             
+    }; 
+    
+    rememberQuestions();
+
+
+    </script>
+
+</body>
+</html>
